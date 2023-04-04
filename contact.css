@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #24252a;
+    color: white;
+}
+
+li, a{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.links li{
+display: inline-block;
+padding: 20px;
+}
+
+.links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.links li a:hover{
+    color: gray;
+}
+
+/* Contact Box Edits Starts Here */
+.contact-box{
+    width: 500px;
+    background: #24252a;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+  }
+
+form{
+    margin: 35px
+  }
+  
+  .input{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 14px;
+    outline: none;
+  }
+  
+  .textarea-field{
+    height: 150px;
+  }
+
+  /* Footer Edits Starts Here*/
+footer{
+    background-color: #24252a;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+
+.social-media a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.social-media a i{
+    font-size: 32px;
+    color: black;
+}
+
+button{
+    padding: 10px 25px;
+    background-color: #d9e1ea;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: #24252a;
+}
+/* Responsive Edits Starts Here*/
+
+@media(max-width: 600px){
+
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-box{
+        width: 300px;
+        background: #24252a;
+        display: block;
+      }
+
+      .input{
+        width: 200px;
+        height: 40px;
+      }
+
+      footer{
+        padding: 40px 30px 20px;
+    }
+}

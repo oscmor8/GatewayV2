@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+/* Navigation Bar Edits Start Here*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #24252a;
+    color: white;
+}
+
+li, a{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.links li{
+display: inline-block;
+padding: 20px;
+}
+
+.links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.links li a:hover{
+    color: gray;
+}
+/* Menu Edits Start Here*/
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 2px 2px 30px black;
+    border-radius: 20px;
+    margin: 20px;
+    color: black;
+}
+
+img{
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+
+.food-items{
+    padding: 4px;
+    border: 1px solid ;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 2px 2px 10px gray;
+}
+
+
+button{
+    padding: 10px 25px;
+    background-color: #d9e1ea;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: #24252a;
+}
+
+/* Footer Edits Starts Here*/
+footer{
+    background-color: #24252a;
+    position: absolute;
+    bottom: auto;
+    width: 100%;
+   
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+
+.social-media a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.social-media a i{
+    font-size: 32px;
+    color: black;
+}
+/* Responsive Edits Starts Here*/
+@media(max-width: 600px){
+    
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    img{
+        width: 300px;
+        height: 200px;
+    }
+}
+
+
+
+
+
+
+
+

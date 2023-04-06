@@ -7,29 +7,27 @@
 /* Hero Video Edits Start Here */
 .hero{
     width: 100%;
-    height: 100vh;
-    position: relative;
+    height: 100vh; /*completely ocupies the entirety of the browser*/
+    position: relative; /* Will make any child relative to .hero instead of the body*/
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .back-video{
-    position: absolute;
-    right: 0;
+    position: absolute; /*Taken out of the normal flow, can now be positioned inside the parent*/
+    right: 0; /*Used to make the video flush with the screen to the right and bottom*/
     bottom: 0;
-    z-index: -1;
+    z-index: -1; /* It is -1 in order to be positioned behind all other elemnts on the page*/
 }
 
 /* Navigation Bar Edits Start Here*/
 nav{
     position: absolute;
     top: 0;
-    left: 0;
-    padding: 20px 8%;
+    padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 nav ul li{
@@ -80,14 +78,14 @@ footer{
     color: black;
 }
 /* Responsive Design Edits Starts Here*/
-@media (min-aspect-ratio: 16/9){
+@media (min-aspect-ratio: 16/9){ /*applies styles to the .back-video element if the device's aspect ratio is 16:9 or wider*/
     .back-video{
         width: 100%;
         height: auto;
     }
 }
 
-@media (max-aspect-ratio: 16/9){
+@media (max-aspect-ratio: 16/9){ /*applies styles to the .back-video element if the device's aspect ratio is less than 16:9*/
     .back-video{
         width: auto;
         height: 100%;
@@ -95,6 +93,7 @@ footer{
 }
 
 @media (max-width: 588px){
+    
     .content{
         font-size: 70px;
 }

@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /*Total width and height of the element will be calculated by adding the padding and border widths to the specified width and height of the element*/
     font-family: 'Times New Roman', Times, serif;
 }
 /* Hero Video Edits Start Here */
